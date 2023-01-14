@@ -37,13 +37,6 @@
             <version>3.2.1</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.github.ProtocolSupport</groupId>
-            <artifactId>ProtocolSupport</artifactId>
-            <version>f188eb2ea8</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
 </project>

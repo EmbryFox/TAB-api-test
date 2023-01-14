@@ -3,7 +3,6 @@ package io.github.nosequel.tab.shared.client;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
-import protocolsupport.api.ProtocolSupportAPI;
 import us.myles.ViaVersion.api.Via;
 
 public class ClientVersionUtil {
@@ -21,8 +20,6 @@ public class ClientVersionUtil {
 
         if(pluginManager.getPlugin("ViaVersion") != null) {
             return Via.getAPI().getPlayerVersion(player.getUniqueId());
-        } else if(pluginManager.getPlugin("ProtocolSupport") != null) {
-            return ProtocolSupportAPI.getProtocolVersion(player).getId();
         }
 
         return -1;

@@ -33,7 +33,7 @@ public class TabHandler {
         this.handler = handler;
         this.ticks = ticks;
 
-        new TabRunnable(this).runTaskTimer(plugin, 20L, ticks);
+        new TabRunnable(this).runTaskTimerAsynchronously(plugin, 20L, ticks);
     }
 
     /**
@@ -49,7 +49,7 @@ public class TabHandler {
         this.handler = handler;
         this.ticks = ticks;
 
-        new TabRunnable(this).runTaskTimer(plugin, 20L, ticks);
+        new TabRunnable(this).runTaskTimerAsynchronously(plugin, 20L, ticks);
     }
 
     /**
